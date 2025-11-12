@@ -1,0 +1,87 @@
+/* ======= Estilo geral ======= */
+body {
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+  background-attachment: fixed;
+  color: #fff;
+  overflow-x: hidden;
+}
+
+/* ======= Navbar com glass effect ======= */
+.glass-nav {
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(15px);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.navbar-brand span {
+  letter-spacing: 1px;
+  font-size: 1.2rem;
+}
+
+.nav-link {
+  color: rgba(255, 255, 255, 0.8);
+  transition: color 0.3s ease;
+}
+
+.nav-link:hover {
+  color: #fff;
+  text-shadow: 0 0 8px rgba(255,255,255,0.6);
+}
+
+/* ======= Cartão glassmorphism ======= */
+.glassmorphism-card {
+  background: rgba(255, 255, 255, 0.12);
+  backdrop-filter: blur(20px);
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  max-width: 420px;
+  width: 90%;
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+.glassmorphism-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.4);
+}
+
+/* ======= Inputs ======= */
+.form-control::placeholder {
+  color: rgba(255, 255, 255, 0.7) !important;
+}
+
+.form-control {
+  border-radius: 0 50px 50px 0 !important;
+}
+
+.input-group-text {
+  border-radius: 50px 0 0 50px !important;
+}
+
+.form-control:focus {
+  background-color: rgba(255, 255, 255, 0.15) !important;
+  color: #fff !important;
+  border-color: rgba(255, 255, 255, 0.6) !important;
+  box-shadow: 0 0 0 0.25rem rgba(255, 255, 255, 0.25) !important;
+}
+
+/* ======= Botões ======= */
+.btn-hover {
+  transition: all 0.3s ease;
+}
+
+.btn-hover:hover {
+  background: #fff;
+  color: #000 !important;
+  transform: scale(1.03);
+  box-shadow: 0 0 15px rgba(255,255,255,0.5);
+}
+
+/* ======= Animação de entrada ======= */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(40px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.animate-fade {
+  animation: fadeIn 0.8s ease forwards;
+}
